@@ -1,0 +1,253 @@
+body {
+	background: rgb(204,204,204); 
+	font-family: 'Raleway', sans-serif;
+}
+.page {
+	position: relative;
+	width: 21cm;
+	height: 29.7cm;
+	padding: 0.5cm; 
+	line-height: 1.35;
+	background: #fff;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.5cm;
+	box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+	color: #000;
+	letter-spacing: .02rem;
+	font-weight: 500;
+}
+.page-footer {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+}
+h1 {
+	font-size: 1rem;
+	padding: 3px 0;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	margin: 3px 0 15px;
+}
+h2 {
+	margin: 0 0 5px;
+}
+a {
+	font-weight: 600;
+	text-decoration: none;
+}
+td {
+	vertical-align: top;
+}
+p {
+	font-size: 13px;
+	text-align: justify;
+	margin-top: 0;
+	margin-bottom: 5px;
+	line-height: 1.35;
+}
+.input {
+	border: none;
+	border-bottom: 1px solid #000;
+}
+.input:focus {
+	outline: none;
+}
+.line-h-3 {
+	line-height: 3;
+}
+.font-italic {
+	font-style: italic;
+}
+.input-text {
+	position: absolute;
+	left: 0;
+	bottom: -21px;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.m-0 {
+	margin: 0;
+}
+.border-bottom {
+	border-bottom: 1px solid #000;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.mb-15 {
+	margin-bottom: 15px;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.pr-3 {
+	padding-right: 0.5cm;
+}
+.pl-3 {
+	padding-left: 0.5cm;
+}
+.text-black {
+	color: #000;
+}
+.text-blue {
+	color: #5878FF;
+}
+.w-50 {
+	width: 50%;
+}
+.w-100 {
+	width: 100%;
+}
+.mw-100 {
+	max-width: 100%;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.fs-8 {
+	font-size: 8px;
+}
+.fs-9 {
+	font-size: 9px;
+}
+.fs-10 {
+	font-size: 10px;
+}
+.fs-11 {
+	font-size: 11px;
+}
+.fs-12 {
+	font-size: 12px;
+}
+.fs-13 {
+	font-size: 13px;
+}
+.fs-14 {
+	font-size: 14px;
+}
+.fs-15 {
+	font-size: 15px;
+}
+.fs-16 {
+	font-size: 16px;
+}
+.fs-18 {
+	font-size: 18px;
+}
+.fs-20 {
+	font-size: 20px;
+}
+.fw-bold {
+	font-weight: bold;
+}
+.fw-600 {
+	font-weight: 600;
+}
+.container {
+	display: inline-flex;
+	position: relative;
+	align-items: center;
+	padding-left: 35px;
+	height: 29px;
+	cursor: pointer;
+	font-size: 13px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 10px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #F1F4FF;
+	border: 2px solid #000;
+}
+
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	background: black;
+}
+.container.check-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: transparent;
+}
+
+.container.sm-container {
+	padding-left: 22px;
+    height: 15px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.sm-container .checkmark {
+    height: 14px;
+    width: 14px;
+    border-width: 1px;
+}
+.container.sm-container .checkmark:after {
+	top: 4px;
+	left: 4px;
+	width: 6px;
+    height: 6px;
+}
+
+.license-submit-btn {
+    background: skyblue;
+    padding: 10px 29px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
